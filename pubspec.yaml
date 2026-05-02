@@ -20,3 +20,7 @@ flutter:
 
   assets:
     - assets/coffe.png
+    - assets/cappucino.png
+    - assets/latte.png
+    - assets/mocha.png
+    - assets/espresso.png

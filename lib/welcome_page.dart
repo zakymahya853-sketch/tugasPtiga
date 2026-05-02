@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'home_page.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({super.key});
@@ -54,7 +55,14 @@ class WelcomePage extends StatelessWidget {
                 SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const HomePage(),
+                        ),
+                      );
+                    },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.brown,
                       padding: const EdgeInsets.symmetric(vertical: 16),
@@ -63,6 +71,7 @@ class WelcomePage extends StatelessWidget {
                       ),
                     ),
                     child: const Text("Mulai"),
+                    
                   ),
                 ),
 
@@ -71,6 +80,7 @@ class WelcomePage extends StatelessWidget {
             ),
           ),
         ],
+        
       ),
     );
   }
